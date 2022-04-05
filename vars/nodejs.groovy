@@ -1,5 +1,4 @@
-
-def call(Map config=[:]){
+def call(Map config = [:]) {
     nodejs(nodeJSInstallationName: "${config.name}") {
         // install dependencies
         sh 'npm install'
